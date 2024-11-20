@@ -1,0 +1,463 @@
+/* styles.css */
+
+/* Set background gradient with pastel purple shades */
+body {
+    background: linear-gradient(45deg, #D3A6FF, #E0BBE4, #D7A7D3);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000; /* Mengubah warna teks menjadi hitam */
+}
+
+/* Basic styling for the header */
+header {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for contrast */
+    padding: 20px;
+    text-align: center;
+    position: sticky;   /* membuat header tetap sticky */
+    top: 0;             /* tetap berada di atas halaman */
+    z-index: 1000;      /* memastikan header tetap di atas konten lainnya */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #6A4C9C; /* Pastel purple */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #6A4C9C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4B2A7E; /* Darker purple for hover effect */
+}
+
+/* Section styling */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #4B2A7E;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #000000; /* Mengubah warna teks di bagian paragraf menjadi hitam */
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #6A4C9C;
+    border-radius: 4px;
+    background-color: #f3f0f8;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #D3A6FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #B88FF6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+footer p {
+    color: #000000; /* Mengubah warna teks footer menjadi hitam */
+    font-size: 1em;
+}
+
+/* Styling untuk Gambar di Beranda */
+.beranda-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-oval {
+    width: 200px; /* Mengatur lebar gambar menjadi 300px */
+    height: 300px; /* Mengatur tinggi gambar menjadi 300px */
+    border-radius: 50%; /* Membuat gambar berbentuk oval */
+    border: 5px solid #fff; /* Memberikan border putih di sekitar gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Memberikan bayangan lembut pada gambar */
+    transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.img-oval:hover {
+    transform: scale(1.1); /* Efek zoom saat gambar di-hover */
+}
+
+/* Gaya lainnya bisa ditambahkan sesuai kebutuhan */
+/* Styling untuk Beranda */
+#beranda {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #E3F2FD; /* Biru Muda */
+}
+
+#beranda h2 {
+    font-size: 2.5em;
+    color: #0277BD; /* Biru Tua */
+    margin-bottom: 10px;
+}
+
+#beranda p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk Moto */
+.moto {
+    background-color: #B3E5FC; /* Biru Pastel */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.moto h3 {
+    font-size: 1.8em;
+    color: #0277BD;
+    margin-bottom: 10px;
+}
+
+.moto p {
+    font-size: 1.2em;
+    color: #333;
+    font-style: italic;
+}
+
+/* Styling untuk Visi dan Misi */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.vision, .mission {
+    background-color: #B3E5FC; /* Biru Pastel */
+    padding: 20px;
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.vision h3, .mission h3 {
+    font-size: 1.8em;
+    color: #0277BD;
+    margin-bottom: 10px;
+}
+
+.vision p, .mission p {
+    font-size: 1.1em;
+    color: #555;
+}
+/* Styling untuk Beranda */
+#beranda {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #E3F2FD; /* Biru Muda */
+}
+
+#beranda h2 {
+    font-size: 2.5em;
+    color: #0277BD; /* Biru Tua */
+    margin-bottom: 10px;
+}
+
+#beranda p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk Moto */
+.moto {
+    background-color: #B3E5FC; /* Biru Pastel */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.moto h3 {
+    font-size: 1.8em;
+    color: #0277BD;
+    margin-bottom: 10px;
+}
+
+.moto p {
+    font-size: 1.2em;
+    color: #333;
+    font-style: italic;
+}
+
+/* Styling untuk Gambar Hero */
+.hero-image {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 400px; /* Menentukan lebar maksimal gambar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk Visi dan Misi */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.vision, .mission {
+    background-color: #B3E5FC; /* Biru Pastel */
+    padding: 20px;
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.vision h3, .mission h3 {
+    font-size: 1.8em;
+    color: #0277BD;
+    margin-bottom: 10px;
+}
+
+.vision p, .mission p {
+    font-size: 1.1em;
+    color: #555;
+}
+/* Styling untuk Data Perusahaan */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #0277BD;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+/* Contact Section Styling */
+#contact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group input[type="submit"],
+.form-group input[type="reset"] {
+    width: 48%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input[type="reset"] {
+    background-color: #f44336;
+}
+
+.form-group input[type="submit"]:hover,
+.form-group input[type="reset"]:hover {
+    opacity: 0.8;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.map-container {
+    margin-top: 30px;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#gallery {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.folder-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+/* styles.css */
+.img-rounded {
+    width: 300px; /* Anda bisa menyesuaikan lebar gambar */
+    height: 200px; /* Anda bisa menyesuaikan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar memenuhi ukuran tanpa distorsi */
+    border-radius: 15px; /* Sudut tumpul dengan radius 15px, bisa disesuaikan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada gambar */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.img-rounded:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
